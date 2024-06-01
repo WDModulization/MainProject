@@ -1,0 +1,6 @@
+framework module Business_A_Extension {
+  umbrella header "Business_A_Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

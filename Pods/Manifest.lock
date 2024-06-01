@@ -1,0 +1,31 @@
+PODS:
+  - Business_A (1.0):
+    - Business_B_Extension
+  - Business_A_Extension (1.0):
+    - CTMediator
+  - Business_B_Extension (1.0):
+    - CTMediator
+  - CTMediator (48)
+
+DEPENDENCIES:
+  - Business_A
+  - Business_A_Extension
+  - Business_B_Extension
+
+SPEC REPOS:
+  https://github.com/WDModulization/WD_PodSpecs.git:
+    - Business_A
+    - Business_A_Extension
+    - Business_B_Extension
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - CTMediator
+
+SPEC CHECKSUMS:
+  Business_A: 635d51ee99da5e9d1309219e2a962fd7ffdeb124
+  Business_A_Extension: 2255503f44ad3ecb287c6ee09fe8a5e9e1b0366d
+  Business_B_Extension: 6932bdfb5f94d99acd7daa3b4856e6e04769bf64
+  CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
+
+PODFILE CHECKSUM: d2e525f85f6d150f0672609aab1709271aedd8e9
+
+COCOAPODS: 1.12.0

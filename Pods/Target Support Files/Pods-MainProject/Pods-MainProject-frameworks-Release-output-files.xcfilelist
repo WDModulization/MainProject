@@ -1,0 +1,4 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Business_A.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Business_A_Extension.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Business_B_Extension.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework

@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Business_A/Business_A.framework
+${BUILT_PRODUCTS_DIR}/Business_A_Extension/Business_A_Extension.framework
+${BUILT_PRODUCTS_DIR}/Business_B_Extension/Business_B_Extension.framework
+${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
