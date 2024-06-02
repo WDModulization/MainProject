@@ -23,5 +23,7 @@ target 'MainProject' do
 #  local_pods
   remote_pods
   
+  pod "WDUIKit",path: "../WDUIKit"
+  
   
 end

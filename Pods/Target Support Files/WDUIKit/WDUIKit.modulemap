@@ -1,0 +1,6 @@
+framework module WDUIKit {
+  umbrella header "WDUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

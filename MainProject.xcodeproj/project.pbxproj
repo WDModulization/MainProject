@@ -17,6 +17,7 @@
 		04FCDE892C099B7C00C9E25E /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDE882C099B7C00C9E25E /* BViewController.m */; };
 		04FCDEE82C09B52A00C9E25E /* Target_B.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FCDEE72C09B52A00C9E25E /* Target_B.m */; };
 		2EBC60500BCB0840B69F0D45 /* Pods_MainProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C334362CF100EBBFD650341 /* Pods_MainProject.framework */; };
+		D29BB2B92C0C799D00CC84F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29BB2B82C0C799D00CC84F6 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		4D2592AF373069B8018E72C3 /* Pods-MainProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.debug.xcconfig"; path = "Target Support Files/Pods-MainProject/Pods-MainProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5D5360BCF12C60C4AB22857F /* Pods-MainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.release.xcconfig"; path = "Target Support Files/Pods-MainProject/Pods-MainProject.release.xcconfig"; sourceTree = "<group>"; };
 		6C334362CF100EBBFD650341 /* Pods_MainProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D29BB2B72C0C799C00CC84F6 /* MainProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		D29BB2B82C0C799D00CC84F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +94,14 @@
 				04FCDE4A2C0991A100C9E25E /* SceneDelegate.m */,
 				04FCDE4C2C0991A100C9E25E /* ViewController.h */,
 				04FCDE4D2C0991A100C9E25E /* ViewController.m */,
+				D29BB2B82C0C799D00CC84F6 /* LoginViewController.swift */,
 				048A9CCD2C0AE25A007ED0A6 /* Business_B */,
 				04FCDE4F2C0991A100C9E25E /* Main.storyboard */,
 				04FCDE522C0991A200C9E25E /* Assets.xcassets */,
 				04FCDE542C0991A200C9E25E /* LaunchScreen.storyboard */,
 				04FCDE572C0991A200C9E25E /* Info.plist */,
 				04FCDE582C0991A200C9E25E /* main.m */,
+				D29BB2B72C0C799C00CC84F6 /* MainProject-Bridging-Header.h */,
 			);
 			path = MainProject;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				TargetAttributes = {
 					04FCDE422C0991A100C9E25E = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -232,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29BB2B92C0C799D00CC84F6 /* LoginViewController.swift in Sources */,
 				04FCDE4E2C0991A100C9E25E /* ViewController.m in Sources */,
 				04FCDE892C099B7C00C9E25E /* BViewController.m in Sources */,
 				04FCDE482C0991A100C9E25E /* AppDelegate.m in Sources */,
@@ -385,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V68M24UBXJ;
@@ -404,6 +412,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainProject/MainProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V68M24UBXJ;
@@ -433,6 +445,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.MainProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainProject/MainProject-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

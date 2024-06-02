@@ -9,11 +9,13 @@ PODS:
   - Business_B_Extension (1.2):
     - CTMediator
   - CTMediator (48)
+  - WDUIKit (1.0)
 
 DEPENDENCIES:
   - Business_A
   - Business_A_Extension
   - Business_B_Extension
+  - WDUIKit (from `../WDUIKit`)
 
 SPEC REPOS:
   https://github.com/WDModulization/WD_PodSpecs.git:
@@ -23,12 +25,17 @@ SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - CTMediator
 
+EXTERNAL SOURCES:
+  WDUIKit:
+    :path: "../WDUIKit"
+
 SPEC CHECKSUMS:
   Business_A: e7e8e759cde30071b23eaa3b259daac208a1af79
   Business_A_Extension: 2255503f44ad3ecb287c6ee09fe8a5e9e1b0366d
   Business_B_Extension: f24f0ad7f7644dcad1bfa2742d3eea71984be3fc
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
+  WDUIKit: b08c6684fb3c76128c63226d18d8b22781d886e0
 
-PODFILE CHECKSUM: 1c12e264216d6c106b83303e64d685f3d4019346
+PODFILE CHECKSUM: ea0844722545a2d07c6321d72dbf8d4089cc878a
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.14.2
