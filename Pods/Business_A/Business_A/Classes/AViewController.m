@@ -7,8 +7,11 @@
 
 #import "AViewController.h"
 #import <Business_B_Extension/CTMediator+Business_B.h>
+#import "UIImage+Bundle.h"
 @interface AViewController ()
-
+{
+    UIImageView *bgimage;
+}
 @end
 
 @implementation AViewController
@@ -18,12 +21,24 @@
     // Do any additional setup after loading the view.
     self.title = [NSString stringWithFormat:@"modul_A_%@",self.type];
     self.view.backgroundColor = [UIColor blueColor];
+    
+    bgimage = [[UIImageView alloc] init];
+
+    bgimage.image = [UIImage imageOfBundleNamed:@"gk_login_bg"];
+    
+    [self.view addSubview:bgimage];
+    bgimage.frame = self.view.bounds;
+
 
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     NSLog(@"touchesEnded");
-    UIViewController *bvc = [[CTMediator sharedInstance] B_viewControllerWithContentText:@"hello"];
+    UIViewController *bvc = [[CTMediator sharedInstance] B_viewControllerWithContentText:@"hello" callback:^(NSString *color_str) {
+        if ([color_str isEqualToString:@"red"]){
+            self->bgimage.image = [UIImage imageOfBundleNamed:@"gk_login_apple"];
+        }
+    }];
     [self.navigationController pushViewController:bvc animated:YES];
 }
 

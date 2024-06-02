@@ -1,9 +1,12 @@
 PODS:
-  - Business_A (1.0):
+  - Business_A (1.1):
+    - Business_A/source (= 1.1)
+    - Business_B_Extension
+  - Business_A/source (1.1):
     - Business_B_Extension
   - Business_A_Extension (1.0):
     - CTMediator
-  - Business_B_Extension (1.0):
+  - Business_B_Extension (1.2):
     - CTMediator
   - CTMediator (48)
 
@@ -21,11 +24,11 @@ SPEC REPOS:
     - CTMediator
 
 SPEC CHECKSUMS:
-  Business_A: 635d51ee99da5e9d1309219e2a962fd7ffdeb124
+  Business_A: e7e8e759cde30071b23eaa3b259daac208a1af79
   Business_A_Extension: 2255503f44ad3ecb287c6ee09fe8a5e9e1b0366d
-  Business_B_Extension: 6932bdfb5f94d99acd7daa3b4856e6e04769bf64
+  Business_B_Extension: f24f0ad7f7644dcad1bfa2742d3eea71984be3fc
   CTMediator: 3f3578b525b3a46a7a2f92a99922ec40363f4269
 
-PODFILE CHECKSUM: d2e525f85f6d150f0672609aab1709271aedd8e9
+PODFILE CHECKSUM: 1c12e264216d6c106b83303e64d685f3d4019346
 
 COCOAPODS: 1.12.0

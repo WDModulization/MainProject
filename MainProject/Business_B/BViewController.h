@@ -8,9 +8,10 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void(^CallbackBlock)(NSString *color_str);
 @interface BViewController : UIViewController
 @property (nonatomic, strong) NSString * contentText;
+@property (nonatomic, copy) CallbackBlock block;
 @end
 
 NS_ASSUME_NONNULL_END

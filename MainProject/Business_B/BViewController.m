@@ -20,6 +20,9 @@
     self.title = self.contentText;
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if (self.block) self.block(@"red");
+}
 /*
 #pragma mark - Navigation
 

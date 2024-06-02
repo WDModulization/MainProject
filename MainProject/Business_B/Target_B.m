@@ -12,8 +12,10 @@
 
 - (UIViewController *)Action_getViewController:(NSDictionary *)params{
     NSString *contentText = params[@"contentText"];
+    CallbackBlock block = params[@"callback"];
     BViewController *vc = [[BViewController alloc] init];
     vc.contentText = contentText;
+    vc.block = block;
     return vc;
 }
 @end

@@ -12,6 +12,7 @@
 
 #import "AViewController.h"
 #import "Target_A.h"
+#import "UIImage+Bundle.h"
 
 FOUNDATION_EXPORT double Business_AVersionNumber;
 FOUNDATION_EXPORT const unsigned char Business_AVersionString[];
